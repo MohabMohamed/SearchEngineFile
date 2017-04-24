@@ -1,0 +1,13 @@
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe.config
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.pdb
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.AddCategory.resources
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.AddFile.resources
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.DisplayCategory.resources
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.DisplayFile.resources
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Form1.resources
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.KeywordsDetails.resources
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Properties.Resources.resources
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csproj.GenerateResource.Cache
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.exe
+D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.pdb
