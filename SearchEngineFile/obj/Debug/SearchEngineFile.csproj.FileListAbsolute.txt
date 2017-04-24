@@ -11,3 +11,6 @@ D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\ob
 D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csproj.GenerateResource.Cache
 D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.exe
 D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.pdb
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe.config
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.exe
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.pdb
