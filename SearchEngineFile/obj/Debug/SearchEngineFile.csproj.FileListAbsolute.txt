@@ -14,3 +14,17 @@ D:\_FCIS\SnaTaniaa\Sem 2\Files Organization\SearchEngineFile\SearchEngineFile\ob
 E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe.config
 E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.exe
 E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.pdb
+D:\gitprojects\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe.config
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.exe
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.pdb
+D:\gitprojects\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe
+D:\gitprojects\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.pdb
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csprojResolveAssemblyReference.cache
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.AddCategory.resources
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.AddFile.resources
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.DisplayCategory.resources
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.DisplayFile.resources
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Form1.resources
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.KeywordsDetails.resources
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Properties.Resources.resources
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csproj.GenerateResource.Cache

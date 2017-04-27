@@ -16,40 +16,48 @@ namespace SearchEngineFile
         {
             InitializeComponent();
         }
-
+        
         private void AddFileBtn_Click(object sender, EventArgs e)
         {
             AddFile f = new AddFile();
-            f.Show();
-            this.Hide();
+            LoadForm(f);
         }
 
         private void AddCategoryBtn_Click(object sender, EventArgs e)
         {
             AddCategory f = new AddCategory();
-            f.Show();
-            this.Hide();
+            LoadForm(f);
         }
 
         private void DisplayFileBtn_Click(object sender, EventArgs e)
         {
             DisplayFile f = new DisplayFile();
-            f.Show();
-            this.Hide();
+            LoadForm(f);
         }
 
         private void DisplayCategoryBtn_Click(object sender, EventArgs e)
         {
             DisplayCategory f = new DisplayCategory();
-            f.Show();
-            this.Hide();
+            LoadForm(f);
+            
         }
 
         private void KeywordDetails_Click(object sender, EventArgs e)
         {
             KeywordsDetails f = new KeywordsDetails();
-            f.Show();
+            LoadForm(f);
+        }
+        private void LoadForm(Form frm)
+        {
+            frm.FormClosed += new FormClosedEventHandler(Form_Closed);
             this.Hide();
+            
+            frm.Show();
+        }
+
+        void Form_Closed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
     }
 }

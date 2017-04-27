@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Addbtn = new System.Windows.Forms.Button();
             this.KeywordsGV = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.CategoryNameTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.KeywordsGV)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // Addbtn
             // 
-            this.button1.Location = new System.Drawing.Point(266, 249);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "x";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Addbtn.Location = new System.Drawing.Point(266, 277);
+            this.Addbtn.Margin = new System.Windows.Forms.Padding(2);
+            this.Addbtn.Name = "Addbtn";
+            this.Addbtn.Size = new System.Drawing.Size(56, 19);
+            this.Addbtn.TabIndex = 7;
+            this.Addbtn.Text = "Add";
+            this.Addbtn.UseVisualStyleBackColor = true;
+            this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
             // 
             // KeywordsGV
             // 
@@ -52,13 +53,13 @@
             this.KeywordsGV.Margin = new System.Windows.Forms.Padding(2);
             this.KeywordsGV.Name = "KeywordsGV";
             this.KeywordsGV.RowTemplate.Height = 24;
-            this.KeywordsGV.Size = new System.Drawing.Size(289, 165);
+            this.KeywordsGV.Size = new System.Drawing.Size(289, 188);
             this.KeywordsGV.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 24);
+            this.label1.Location = new System.Drawing.Point(30, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 13);
@@ -67,10 +68,10 @@
             // 
             // CategoryNameTB
             // 
-            this.CategoryNameTB.Location = new System.Drawing.Point(135, 22);
+            this.CategoryNameTB.Location = new System.Drawing.Point(140, 22);
             this.CategoryNameTB.Margin = new System.Windows.Forms.Padding(2);
             this.CategoryNameTB.Name = "CategoryNameTB";
-            this.CategoryNameTB.Size = new System.Drawing.Size(76, 20);
+            this.CategoryNameTB.Size = new System.Drawing.Size(106, 20);
             this.CategoryNameTB.TabIndex = 4;
             // 
             // AddCategory
@@ -78,12 +79,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(368, 307);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Addbtn);
             this.Controls.Add(this.KeywordsGV);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CategoryNameTB);
             this.Name = "AddCategory";
             this.Text = "AddCategory";
+            this.Load += new System.EventHandler(this.AddCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.KeywordsGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -92,7 +94,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Addbtn;
         private System.Windows.Forms.DataGridView KeywordsGV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox CategoryNameTB;
