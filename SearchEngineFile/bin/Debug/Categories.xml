@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Categories>
+  <Category Name="sports">
+    <Keyword>swimming</Keyword>
+    <Keyword>runing</Keyword>
+  </Category>
+  <Category Name="3shwa2ya:'D">
+    <Keyword>hoba lala </Keyword>
+    <Keyword>test</Keyword>
+  </Category>
+  <Category Name="testcat">
+    <Keyword>test1</Keyword>
+    <Keyword>test2</Keyword>
+    <Keyword>test3</Keyword>
+    <Keyword>test4</Keyword>
+  </Category>
+  <Category Name="7ady bady">
+    <Keyword>7ady</Keyword>
+    <Keyword>bady</Keyword>
+    <Keyword>kronb</Keyword>
+    <Keyword>zbady</Keyword>
+  </Category>
+</Categories>

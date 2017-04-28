@@ -32,12 +32,13 @@
             this.KeywordsGV = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.CategoryNameTB = new System.Windows.Forms.TextBox();
+            this.Keywords = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.KeywordsGV)).BeginInit();
             this.SuspendLayout();
             // 
             // Addbtn
             // 
-            this.Addbtn.Location = new System.Drawing.Point(266, 277);
+            this.Addbtn.Location = new System.Drawing.Point(180, 294);
             this.Addbtn.Margin = new System.Windows.Forms.Padding(2);
             this.Addbtn.Name = "Addbtn";
             this.Addbtn.Size = new System.Drawing.Size(56, 19);
@@ -49,11 +50,13 @@
             // KeywordsGV
             // 
             this.KeywordsGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.KeywordsGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Keywords});
             this.KeywordsGV.Location = new System.Drawing.Point(33, 60);
             this.KeywordsGV.Margin = new System.Windows.Forms.Padding(2);
             this.KeywordsGV.Name = "KeywordsGV";
             this.KeywordsGV.RowTemplate.Height = 24;
-            this.KeywordsGV.Size = new System.Drawing.Size(289, 188);
+            this.KeywordsGV.Size = new System.Drawing.Size(203, 215);
             this.KeywordsGV.TabIndex = 6;
             // 
             // label1
@@ -68,17 +71,24 @@
             // 
             // CategoryNameTB
             // 
-            this.CategoryNameTB.Location = new System.Drawing.Point(140, 22);
+            this.CategoryNameTB.Location = new System.Drawing.Point(130, 22);
             this.CategoryNameTB.Margin = new System.Windows.Forms.Padding(2);
             this.CategoryNameTB.Name = "CategoryNameTB";
             this.CategoryNameTB.Size = new System.Drawing.Size(106, 20);
             this.CategoryNameTB.TabIndex = 4;
             // 
+            // Keywords
+            // 
+            this.Keywords.FillWeight = 160F;
+            this.Keywords.HeaderText = "Keywords";
+            this.Keywords.Name = "Keywords";
+            this.Keywords.Width = 160;
+            // 
             // AddCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 307);
+            this.ClientSize = new System.Drawing.Size(266, 324);
             this.Controls.Add(this.Addbtn);
             this.Controls.Add(this.KeywordsGV);
             this.Controls.Add(this.label1);
@@ -98,5 +108,6 @@
         private System.Windows.Forms.DataGridView KeywordsGV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox CategoryNameTB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Keywords;
     }
 }
