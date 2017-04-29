@@ -45,20 +45,28 @@ namespace SearchEngineFile
             }
             else
             {
-
-                XmlDocument doc = new XmlDocument();
+               
+                    XmlDocument doc = new XmlDocument();
                 doc.Load("Categories.xml");
-                XmlElement CatElm = doc.CreateElement("Category");
-                CatElm.SetAttribute("Name", CategoryNameTB.Text);
-                XmlElement keyword;
-                for (int i = 0; i < KeywordsGV.RowCount-1; i++)
+                if (doc.SelectSingleNode("/ Categories/ Category [@Name =\""+CategoryNameTB.Text+"\"] ") == null)
                 {
-                     keyword = doc.CreateElement("Keyword");
-                     keyword.InnerText = KeywordsGV.Rows[i].Cells[0].Value.ToString();
-                     CatElm.AppendChild(keyword);
+
+                    XmlElement CatElm = doc.CreateElement("Category");
+                    CatElm.SetAttribute("Name", CategoryNameTB.Text);
+                    XmlElement keyword;
+                    for (int i = 0; i < KeywordsGV.RowCount - 1; i++)
+                    {
+                        keyword = doc.CreateElement("Keyword");
+                        keyword.InnerText = KeywordsGV.Rows[i].Cells[0].Value.ToString();
+                        CatElm.AppendChild(keyword);
+                    }
+                    XmlElement root = doc.DocumentElement;
+                    root.AppendChild(CatElm);
+
                 }
-                XmlElement root = doc.DocumentElement;
-                root.AppendChild(CatElm);
+                else
+                    MessageBox.Show("the category already exists");
+
                 doc.Save("Categories.xml");
             }
 
