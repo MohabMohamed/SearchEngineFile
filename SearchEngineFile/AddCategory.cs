@@ -56,7 +56,7 @@ namespace SearchEngineFile
                     XmlElement keyword;
                     for (int i = 0; i < KeywordsGV.RowCount - 1; i++)
                     {
-                        keyword = doc.CreateElement("Keyword");
+                        keyword = doc.CreateElement("Keyword" + (i + 1).ToString());
                         keyword.InnerText = KeywordsGV.Rows[i].Cells[0].Value.ToString();
                         CatElm.AppendChild(keyword);
                     }
