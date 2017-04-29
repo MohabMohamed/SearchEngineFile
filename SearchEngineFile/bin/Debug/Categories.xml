@@ -7,4 +7,12 @@
     <Keyword4>?</Keyword4>
     <Keyword5>:'D</Keyword5>
   </Category>
+  <Category Name="test">
+    <Keyword1>trg</Keyword1>
+    <Keyword2>cc</Keyword2>
+    <Keyword3>uiku</Keyword3>
+  </Category>
+  <Category Name="z">
+    <Keyword1>z</Keyword1>
+  </Category>
 </Categories>
