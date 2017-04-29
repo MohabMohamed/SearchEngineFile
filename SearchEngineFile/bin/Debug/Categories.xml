@@ -1,33 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Categories>
-  <Category Name="sports">
-    <Keyword>swimming</Keyword>
-    <Keyword>runing</Keyword>
-  </Category>
-  <Category Name="3shwa2ya:'D">
-    <Keyword>hoba lala </Keyword>
-    <Keyword>test</Keyword>
-  </Category>
-  <Category Name="testcat">
-    <Keyword>test1</Keyword>
-    <Keyword>test2</Keyword>
-    <Keyword>test3</Keyword>
-    <Keyword>test4</Keyword>
-  </Category>
-  <Category Name="7ady bady">
-    <Keyword>7ady</Keyword>
-    <Keyword>bady</Keyword>
-    <Keyword>kronb</Keyword>
-    <Keyword>zbady</Keyword>
-  </Category>
   <Category Name="lol">
-    <Keyword>jsjws</Keyword>
-    <Keyword>wsw</Keyword>
-    <Keyword>ssw</Keyword>
-  </Category>
-  <Category Name="heeeeeh">
-    <Keyword>nnj</Keyword>
-    <Keyword>jjn</Keyword>
-    <Keyword>nn</Keyword>
+    <Keyword1>kda</Keyword1>
+    <Keyword2>ya</Keyword2>
+    <Keyword3>aya</Keyword3>
+    <Keyword4>?</Keyword4>
+    <Keyword5>:'D</Keyword5>
   </Category>
 </Categories>
