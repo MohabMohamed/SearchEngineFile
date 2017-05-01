@@ -47,10 +47,6 @@ namespace SearchEngineFile
             {
                 MessageBox.Show("Please Select Path of File");
             }
-            else if (txt_pragrapgh.Text == "")
-            {
-                MessageBox.Show("Your Forget Enter in Text Paragraph");
-            }
             else if (categories_all.Count == 0)
             {
                 MessageBox.Show("Please Select Your Categories");
@@ -60,7 +56,6 @@ namespace SearchEngineFile
                 bool a = true;
                 string name = txt_name.Text;
                 string path = txt_path.Text;
-                string paragraph = txt_pragrapgh.Text;
 
                 if (!File.Exists("files.xml"))
                 {
@@ -104,9 +99,6 @@ namespace SearchEngineFile
                             root.AppendChild(category);
                             doc.Save("files.xml"); // save fel file
 
-                            StreamWriter sw = new StreamWriter(path + "\\" + name + ".txt"); // dh el add text file 3la asas e5tyaro lel path el mo3yn w bytsma el file be esm el input file name ele enTa md5lo
-                            sw.Write(paragraph);
-                            sw.Close();
                         }
                     }
                 }
@@ -155,9 +147,6 @@ namespace SearchEngineFile
                         root.AppendChild(category);
                         doc.Save("files.xml");
 
-                        StreamWriter sw = new StreamWriter(path + "\\" + name + ".txt");
-                        sw.Write(paragraph);
-                        sw.Close();
                     }
                 }
 
@@ -166,7 +155,6 @@ namespace SearchEngineFile
                     MessageBox.Show("Successfully Added in File");
                     txt_name.Clear();
                     txt_path.Clear();
-                    txt_pragrapgh.Clear();
 
                     // el7mdollah el Task 5elst be salam :"D
                 }
