@@ -1,2 +1,2 @@
-/SearchEngineFile/bin/*
-/SearchEngineFile/obj/*
+/SearchEngineFile/bin/**
+/SearchEngineFile/obj/**

@@ -21,7 +21,8 @@ namespace SearchEngineFile
 
         private void Addbtn_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("test ay 7aga");
+
             if (!File.Exists("Categories.xml"))
             {
                 XmlWriter writer = XmlWriter.Create("Categories.xml");
