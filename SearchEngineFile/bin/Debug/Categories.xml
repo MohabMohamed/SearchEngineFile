@@ -21,4 +21,10 @@
     <Keyword>basketball</Keyword>
     <Keyword>vollyball</Keyword>
   </Category>
+  <Category Name="tested">
+    <Keyword>all</Keyword>
+    <Keyword>day</Keyword>
+    <Keyword>for</Keyword>
+    <Keyword>loop</Keyword>
+  </Category>
 </Categories>

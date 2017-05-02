@@ -17,6 +17,7 @@ namespace SearchEngineFile
     {
         List<Category> allcategories = new List<Category>();
         List<UserFile> listoffiles = new List<UserFile>();
+        private int Counter = 0;
 
         public KeywordsDetails()
         {
@@ -58,6 +59,73 @@ namespace SearchEngineFile
         private void category_SelectedIndexChanged(object sender, EventArgs e)
         {
             selectedCategory(category.Text);
+            Category theone = new Category();
+            detailsTextBox.Text = "";
+            foreach (Category cate in allcategories)
+            {
+                if(cate.name==category.Text)
+                {
+                    theone = cate;
+                }
+            }
+
+
+            foreach(UserFile Ufile in listoffiles)
+            {
+                FileStream inFile = new FileStream(Ufile.path+"\\" + Ufile.name + ".txt", FileMode.Open);
+                StreamReader reader = new StreamReader(inFile);
+                string record;
+                foreach(String key in theone.keywords)
+                {
+                    List<String> numberofline = new List<string>();
+                    Counter = 0;
+
+                    record = reader.ReadLine();
+
+                    while (record != null)
+                            {
+                               Counter++;
+
+                              if (record.Contains(key))
+                                     {
+                                       numberofline.Add("IN Line " + Counter);
+                                     }
+                                 record = reader.ReadLine();
+                            }
+
+                    /*
+                     * hro7 l 2wel l file
+                     * w hzher l ntayeg
+                     */
+                     reader.BaseStream.Position = 0;
+
+                    if(numberofline.Count!=0)
+                    {
+                          detailsTextBox.Text = detailsTextBox.Text+ "KEYWORD : "+key + "\r"+"In File "+Ufile.name+"   "+numberofline.Count.ToString()+" times\r";
+
+                        for(int q=0;q<numberofline.Count;q++)
+                        {
+                            detailsTextBox.Text = detailsTextBox.Text + numberofline[q]+"\r";
+                        }
+
+                        detailsTextBox.Text = detailsTextBox.Text + "-----------------------------------------------\r";
+
+                    }
+
+                    
+
+
+
+
+
+                }
+                reader.Close();
+                inFile.Close();
+
+
+            }
+
+
 
         }
 

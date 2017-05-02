@@ -30,9 +30,8 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.category = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.detailsTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -56,16 +55,6 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "category";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 70);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(477, 244);
-            this.dataGridView1.TabIndex = 12;
-            // 
             // category
             // 
             this.category.FormattingEnabled = true;
@@ -76,18 +65,25 @@
             this.category.TabIndex = 11;
             this.category.SelectedIndexChanged += new System.EventHandler(this.category_SelectedIndexChanged);
             // 
+            // detailsTextBox
+            // 
+            this.detailsTextBox.Location = new System.Drawing.Point(12, 62);
+            this.detailsTextBox.Name = "detailsTextBox";
+            this.detailsTextBox.Size = new System.Drawing.Size(475, 245);
+            this.detailsTextBox.TabIndex = 19;
+            this.detailsTextBox.Text = "";
+            // 
             // KeywordsDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(499, 363);
+            this.Controls.Add(this.detailsTextBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.category);
             this.Name = "KeywordsDetails";
             this.Text = "KeywordsDetails";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,7 +93,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox category;
+        private System.Windows.Forms.RichTextBox detailsTextBox;
     }
 }
