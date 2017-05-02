@@ -1,19 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Categories>
   <Category Name="lol">
-    <Keyword>kda</Keyword1>
-    <Keyword>ya</Keyword2>
-    <Keyword>aya</Keyword3>
-    <Keyword>?</Keyword4>
-    <Keyword>:'D</Keyword5>
+    <Keyword1>kda</Keyword1>
+    <Keyword2>ya</Keyword2>
+    <Keyword3>aya</Keyword3>
+    <Keyword4>?</Keyword4>
+    <Keyword5>:'D</Keyword5>
   </Category>
   <Category Name="test">
-    <Keyword>trg</Keyword1>
-    <Keyword>cc</Keyword2>
-    <Keyword>uiku</Keyword3>
+    <Keyword1>trg</Keyword1>
+    <Keyword2>cc</Keyword2>
+    <Keyword3>uiku</Keyword3>
   </Category>
   <Category Name="z">
-    <Keyword>z</Keyword1>
+    <Keyword1>z</Keyword1>
   </Category>
   <Category Name="" />
+  <Category Name="sport">
+    <Keyword>football</Keyword>
+    <Keyword>basketball</Keyword>
+    <Keyword>vollyball</Keyword>
+  </Category>
 </Categories>
