@@ -16,6 +16,7 @@ namespace SearchEngineFile
     public partial class KeywordsDetails : Form
     {
         List<Category> allcategories = new List<Category>();
+        List<UserFile> listoffiles = new List<UserFile>();
 
         public KeywordsDetails()
         {
@@ -28,7 +29,8 @@ namespace SearchEngineFile
             XmlDocument doc = new XmlDocument();
             doc.Load("Categories.xml");
             XmlNodeList list = doc.GetElementsByTagName("Category");
-            for(int i=0;i<list.Count;i++)
+            allcategories.Clear();
+            for (int i=0;i<list.Count;i++)
             {
                 Category one = new Category();
                 XmlNodeList children = list[i].ChildNodes;
@@ -55,7 +57,7 @@ namespace SearchEngineFile
 
         private void category_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            selectedCategory(category.Text);
 
         }
 
@@ -63,13 +65,20 @@ namespace SearchEngineFile
         {
             XmlDocument doc = new XmlDocument();
             doc.Load("files.xml");
-            XmlNode list2 = doc.GetElementById("categories");
+            XmlNode list2 = doc.SelectSingleNode("categories");
             XmlNodeList children = list2.ChildNodes;
-            for(int i=0;i<children.Count;i++)
+            listoffiles.Clear();
+            for (int i=0;i<children.Count;i++)
             {
-
+                UserFile one = new UserFile();
+                if(children[i].Name==Categoryname)
+                {
+                    XmlNodeList childofchild = children[i].ChildNodes;
+                    one.name=childofchild[0].InnerText;
+                    one.path = childofchild[1].InnerText;
+                }
+                listoffiles.Add(one);
             }
-
 
         }
 
