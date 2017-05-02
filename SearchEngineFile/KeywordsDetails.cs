@@ -105,7 +105,7 @@ namespace SearchEngineFile
 
                     if(numberofline.Count!=0)
                     {
-                          detailsTextBox.Text = detailsTextBox.Text+ "KEYWORD : "+key + "\r"+"In File "+Ufile.name+"   "+repetition+" times\r";
+                          detailsTextBox.Text = detailsTextBox.Text+ "KEYWORD : "+key + "\r"+"In File "+Ufile.name+"   "+repetition+" times\r\r";
 
                         for(int q=0;q<numberofline.Count;q++)
                         {
