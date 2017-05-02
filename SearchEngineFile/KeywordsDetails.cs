@@ -76,8 +76,9 @@ namespace SearchEngineFile
                     XmlNodeList childofchild = children[i].ChildNodes;
                     one.name=childofchild[0].InnerText;
                     one.path = childofchild[1].InnerText;
+                    listoffiles.Add(one);
                 }
-                listoffiles.Add(one);
+                
             }
 
         }
