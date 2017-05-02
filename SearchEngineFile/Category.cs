@@ -8,9 +8,9 @@ namespace SearchEngineFile
 {
     class Category
     {
-        String name { set; get; }
-        List<String> keywords { set; get; }
-
+        public String name { set; get; }
+        public List<String> keywords { set; get; }
+        public Category() { keywords = new List<string>(); }
 
 
     }

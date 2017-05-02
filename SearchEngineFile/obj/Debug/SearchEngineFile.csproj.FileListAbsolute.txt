@@ -28,3 +28,14 @@ D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Form
 D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.KeywordsDetails.resources
 D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Properties.Resources.resources
 D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csproj.GenerateResource.Cache
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csprojResolveAssemblyReference.cache
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.AddCategory.resources
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.AddFile.resources
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.DisplayCategory.resources
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.DisplayFile.resources
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Form1.resources
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.KeywordsDetails.resources
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Properties.Resources.resources
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csproj.GenerateResource.Cache
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe
+E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.pdb

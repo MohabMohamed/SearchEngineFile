@@ -8,8 +8,10 @@ namespace SearchEngineFile
 {
     class UserFile
     {
-        String name { set; get; }
-        String path { set; get}
-        List<Category> FileCategories { set; get;}
+       public String name { set; get; }
+       public String path { set; get; }
+       public List<Category> FileCategories { set; get;}
+       public UserFile() { FileCategories = new List<Category>(); }
+
     }
 }
