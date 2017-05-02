@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.IO;
@@ -21,7 +14,7 @@ namespace SearchEngineFile
 
         private void Addbtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("test ay 7aga");
+           
 
             if (!File.Exists("Categories.xml"))
             {
@@ -34,7 +27,7 @@ namespace SearchEngineFile
                 //writer.WriteString(CategoryNameTB.Text);
                 for (int i = 0; i < KeywordsGV.RowCount-1; i++)
                 {
-                    writer.WriteStartElement("Keyword"+(i+1).ToString());
+                    writer.WriteStartElement("Keyword");
                     writer.WriteString(KeywordsGV.Rows[i].Cells[0].Value.ToString());
                     writer.WriteEndElement();
                 }
@@ -57,7 +50,7 @@ namespace SearchEngineFile
                     XmlElement keyword;
                     for (int i = 0; i < KeywordsGV.RowCount - 1; i++)
                     {
-                        keyword = doc.CreateElement("Keyword" + (i + 1).ToString());
+                        keyword = doc.CreateElement("Keyword");
                         keyword.InnerText = KeywordsGV.Rows[i].Cells[0].Value.ToString();
                         CatElm.AppendChild(keyword);
                     }
