@@ -52,5 +52,27 @@ namespace SearchEngineFile
             f.Show();
             this.Hide();
         }
+
+        private void category_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        void selectedCategory(String Categoryname)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("files.xml");
+            XmlNode list2 = doc.GetElementById("categories");
+            XmlNodeList children = list2.ChildNodes;
+            for(int i=0;i<children.Count;i++)
+            {
+
+            }
+
+
+        }
+
+
     }
 }

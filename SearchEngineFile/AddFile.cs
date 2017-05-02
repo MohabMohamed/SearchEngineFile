@@ -17,6 +17,7 @@ namespace SearchEngineFile
         public AddFile()
         {
             InitializeComponent();
+            checklistofcategories();
             txt_path.Enabled = false;
         }
 
@@ -33,6 +34,7 @@ namespace SearchEngineFile
 
         private void bTn_save_Click(object sender, EventArgs e)
         {
+
             List<string> categories_all = new List<string>(); // list of checkedlist
             for (int i = 0; i < categories.CheckedItems.Count; i++)
             {
@@ -57,6 +59,7 @@ namespace SearchEngineFile
             }
             else
             {
+             
                 bool a = true;
                 string name = txt_name.Text;
                 string path = txt_path.Text;
@@ -172,5 +175,29 @@ namespace SearchEngineFile
                 }
             }
         }
+
+
+        void checklistofcategories()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Categories.xml");
+            XmlNodeList list = doc.GetElementsByTagName("Category");
+            for (int i = 0; i < list.Count; i++)
+            {
+                Category one = new Category();
+                XmlNodeList children = list[i].ChildNodes;
+                XmlAttributeCollection Att = list[i].Attributes;
+                one.name = Att[0].Value;
+                for (int y = 0; y < children.Count; y++)
+                {
+                    one.keywords.Add(children[y].InnerText);
+                }
+
+                categories.Items.Add(one.name);
+            }
+
+        }
+
+
     }
 }

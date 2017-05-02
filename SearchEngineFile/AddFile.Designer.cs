@@ -62,11 +62,6 @@
             // categories
             // 
             this.categories.FormattingEnabled = true;
-            this.categories.Items.AddRange(new object[] {
-            "category1",
-            "category2",
-            "category3",
-            "category4"});
             this.categories.Location = new System.Drawing.Point(431, 16);
             this.categories.Name = "categories";
             this.categories.Size = new System.Drawing.Size(183, 394);
