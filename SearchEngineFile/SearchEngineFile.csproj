@@ -76,6 +76,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Highlightform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Highlightform.Designer.cs">
+      <DependentUpon>Highlightform.cs</DependentUpon>
+    </Compile>
     <Compile Include="KeywordsDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Highlightform.resx">
+      <DependentUpon>Highlightform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KeywordsDetails.resx">
       <DependentUpon>KeywordsDetails.cs</DependentUpon>

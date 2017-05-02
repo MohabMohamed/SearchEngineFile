@@ -59,5 +59,11 @@ namespace SearchEngineFile
         {
             this.Show();
         }
+
+        private void Highlight_Click(object sender, EventArgs e)
+        {
+            Highlightform f = new Highlightform();
+            LoadForm(f);
+        }
     }
 }
