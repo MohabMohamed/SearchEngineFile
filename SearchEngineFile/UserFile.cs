@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SearchEngineFile
 {
-    class UserFile
+    public class UserFile
     {
        public String name { set; get; }
        public String path { set; get; }

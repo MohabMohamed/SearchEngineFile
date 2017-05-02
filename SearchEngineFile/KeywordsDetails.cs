@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.IO;
+using System.Xml;
 
 namespace SearchEngineFile
 {
@@ -19,18 +20,29 @@ namespace SearchEngineFile
         public KeywordsDetails()
         {
             InitializeComponent();
-            XmlSerializer xs = new XmlSerializer(allcategories.GetType());
-            FileStream fs = new FileStream("Categories.xml", FileMode.Open);
-            allcategories = (List<Category>)xs.Deserialize(fs);
-            fs.Close();
-            dataGridView1.DataSource = allcategories;
-
-
             fillCategoryList();
         }
 
         void fillCategoryList()
         {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Categories.xml");
+            XmlNodeList list = doc.GetElementsByTagName("Category");
+            for(int i=0;i<list.Count;i++)
+            {
+                Category one = new Category();
+                XmlNodeList children = list[i].ChildNodes;
+                XmlAttributeCollection Att= list[i].Attributes;
+                one.name = Att[0].Value;
+                for(int y=0;y<children.Count;y++)
+                {
+                    one.keywords.Add(children[y].InnerText);
+                }
+
+                allcategories.Add(one);
+                category.Items.Add(one.name);
+            }
+
 
         }
 
