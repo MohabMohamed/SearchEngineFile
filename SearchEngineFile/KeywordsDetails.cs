@@ -18,6 +18,7 @@ namespace SearchEngineFile
         List<Category> allcategories = new List<Category>();
         List<UserFile> listoffiles = new List<UserFile>();
         private int Counter = 0;
+        private int repetition = 0;
 
         public KeywordsDetails()
         {
@@ -79,7 +80,7 @@ namespace SearchEngineFile
                 {
                     List<String> numberofline = new List<string>();
                     Counter = 0;
-
+                    repetition = 0;
                     record = reader.ReadLine();
 
                     while (record != null)
@@ -88,7 +89,10 @@ namespace SearchEngineFile
 
                               if (record.Contains(key))
                                      {
-                                       numberofline.Add("IN Line " + Counter);
+                                      var arr = record.Split(new char[] { ' ', '.' });
+                                      var count = Array.FindAll(arr, s => s.Equals(key.Trim())).Length;
+                                      repetition += count;
+                                      numberofline.Add("IN Line " + Counter+" and repeate "+count);
                                      }
                                  record = reader.ReadLine();
                             }
@@ -101,7 +105,7 @@ namespace SearchEngineFile
 
                     if(numberofline.Count!=0)
                     {
-                          detailsTextBox.Text = detailsTextBox.Text+ "KEYWORD : "+key + "\r"+"In File "+Ufile.name+"   "+numberofline.Count.ToString()+" times\r";
+                          detailsTextBox.Text = detailsTextBox.Text+ "KEYWORD : "+key + "\r"+"In File "+Ufile.name+"   "+repetition+" times\r";
 
                         for(int q=0;q<numberofline.Count;q++)
                         {
