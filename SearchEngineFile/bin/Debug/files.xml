@@ -1,47 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <categories>
-  <category1>
-    <Name_File>Ahmed</Name_File>
-    <Path_File>C:\Users\lenovo Z\Desktop\Jquery</Path_File>
-  </category1>
-  <category3>
-    <Name_File>Ahmed</Name_File>
-    <Path_File>C:\Users\lenovo Z\Desktop\Jquery</Path_File>
-  </category3>
-  <lol>
+  <Sports>
     <Name_File>dina</Name_File>
     <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </lol>
-  <test>
-    <Name_File>dina</Name_File>
+  </Sports>
+  <Sports>
+    <Name_File>doda</Name_File>
     <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </test>
-  <test>
-    <Name_File>dina2</Name_File>
+  </Sports>
+  <Sports>
+    <Name_File>doda2</Name_File>
     <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </test>
-  <z>
-    <Name_File>dina2</Name_File>
+  </Sports>
+  <Sports>
+    <Name_File>doda3</Name_File>
     <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </z>
-  <categ1>
-    <Name_File>jkhkjh</Name_File>
+  </Sports>
+  <forall>
+    <Name_File>forrr</Name_File>
     <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </categ1>
-  <categ2>
-    <Name_File>jkhkjh</Name_File>
-    <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </categ2>
-  <categ1>
-    <Name_File>dinaaaa</Name_File>
-    <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </categ1>
-  <categ2>
-    <Name_File>dinaaaa</Name_File>
-    <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </categ2>
-  <tested>
-    <Name_File>dinaaaaa</Name_File>
-    <Path_File>C:\Users\DELL\Desktop</Path_File>
-  </tested>
+  </forall>
 </categories>

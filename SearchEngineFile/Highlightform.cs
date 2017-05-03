@@ -105,7 +105,7 @@ namespace SearchEngineFile
             {
                 richHighlight.Find(key, start, richHighlight.TextLength, RichTextBoxFinds.MatchCase);
 
-                richHighlight.SelectionBackColor = Color.Yellow;
+                richHighlight.SelectionBackColor = Color.Chartreuse;
 
                 start = richHighlight.Text.IndexOf(key, start) + 1;
             }
