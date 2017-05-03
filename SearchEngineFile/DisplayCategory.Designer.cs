@@ -28,35 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.KeyWordsGV = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.KeyWordsGV)).BeginInit();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(276, 320);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 32);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Main Menu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // KeyWordsGV
-            // 
-            this.KeyWordsGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.KeyWordsGV.Location = new System.Drawing.Point(71, 116);
-            this.KeyWordsGV.Margin = new System.Windows.Forms.Padding(2);
-            this.KeyWordsGV.Name = "KeyWordsGV";
-            this.KeyWordsGV.RowTemplate.Height = 24;
-            this.KeyWordsGV.Size = new System.Drawing.Size(291, 200);
-            this.KeyWordsGV.TabIndex = 14;
             // 
             // label2
             // 
@@ -86,6 +63,7 @@
             this.button2.TabIndex = 16;
             this.button2.Text = "Display";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -94,33 +72,38 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 17;
             // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(72, 110);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(212, 203);
+            this.listView1.TabIndex = 18;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
+            // 
             // DisplayCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 374);
+            this.ClientSize = new System.Drawing.Size(330, 374);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.KeyWordsGV);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "DisplayCategory";
             this.Text = "DisplayCategory";
             this.Load += new System.EventHandler(this.DisplayCategory_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.KeyWordsGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView KeyWordsGV;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListView listView1;
     }
 }

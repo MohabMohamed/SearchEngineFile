@@ -40,3 +40,4 @@ E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\ob
 E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe
 E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.pdb
 E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Highlightform.resources
+D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Highlightform.resources
