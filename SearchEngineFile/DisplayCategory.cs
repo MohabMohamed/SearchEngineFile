@@ -10,14 +10,36 @@ namespace SearchEngineFile
         public DisplayCategory()
         {
             InitializeComponent();
+            fillCategory();
+        }
+        
+        
+
+        private void DisplayCategory_Load(object sender, EventArgs e)
+        {
+
         }
 
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void fillCategory()
         {
+            XmlDocument file = new XmlDocument();
+            file.Load("Categories.xml");
+            XmlNodeList listofcategories = file.GetElementsByTagName("Category");
+            XmlElement root = file.DocumentElement;
+            for (int i = 0; i < listofcategories.Count; i++)
+            {
+                comboBox1.Items.Add(listofcategories[i].Attributes["Name"].Value);
+            }
+
+
+
+         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
             listView1.Clear();
-            string chosenCategory = textBox1.Text.ToString();
+            string chosenCategory = comboBox1.Text;
 
             XmlDocument file = new XmlDocument();
             file.Load("categories.xml");
@@ -50,13 +72,6 @@ namespace SearchEngineFile
                 }
 
             }
-
-        }
-
-
-        private void DisplayCategory_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

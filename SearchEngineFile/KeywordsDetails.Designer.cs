@@ -39,7 +39,7 @@
             this.label1.Location = new System.Drawing.Point(47, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "category";
             // 

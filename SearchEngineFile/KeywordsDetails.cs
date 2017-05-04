@@ -43,28 +43,31 @@ namespace SearchEngineFile
 
         }
 
-   
+
 
         private void category_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             selectedCategory(category.Text);
             Category theone = new Category();
             detailsTextBox.Text = "";
             foreach (Category cate in allcategories)
             {
-                if(cate.name==category.Text)
+                if (cate.name == category.Text)
                 {
                     theone = cate;
                 }
             }
 
 
-            foreach(UserFile Ufile in listoffiles)
+            foreach (UserFile Ufile in listoffiles)
             {
-                FileStream inFile = new FileStream(Ufile.path+"\\" + Ufile.name + ".txt", FileMode.Open);
+                //exception at displaying a category that contains non existant paths
+                FileStream inFile = new FileStream(Ufile.path + "\\" + Ufile.name + ".txt", FileMode.Open);
                 StreamReader reader = new StreamReader(inFile);
+               
                 string record;
-                foreach(String key in theone.keywords)
+                foreach (String key in theone.keywords)
                 {
                     List<String> numberofline = new List<string>();
                     Counter = 0;
@@ -72,51 +75,46 @@ namespace SearchEngineFile
                     record = reader.ReadLine();
 
                     while (record != null)
-                            {
-                               Counter++;
+                    {
+                        Counter++;
 
-                              if (record.Contains(key))
-                                     {
-                                      var arr = record.Split(new char[] { ' ', '.' });
-                                      var count = Array.FindAll(arr, s => s.Equals(key.Trim())).Length;
-                                      repetition += count;
-                                      numberofline.Add("IN Line " + Counter+" and repeate "+count);
-                                     }
-                                 record = reader.ReadLine();
-                            }
+                        if (record.Contains(key))
+                        {
+                            var arr = record.Split(new char[] { ' ', '.' });
+                            var count = Array.FindAll(arr, s => s.Equals(key.Trim())).Length;
+                            repetition += count;
+                            numberofline.Add("IN Line " + Counter + " and repeate " + count);
+                        }
+                        record = reader.ReadLine();
+                    }
 
                     /*
                      * hro7 l 2wel l file
                      * w hzher l ntayeg
                      */
-                     reader.BaseStream.Position = 0;
+                    reader.BaseStream.Position = 0;
 
-                    if(numberofline.Count!=0)
+                    if (numberofline.Count != 0)
                     {
-                          detailsTextBox.Text = detailsTextBox.Text+ "KEYWORD : "+key + "\r"+"In File "+Ufile.name+"   "+repetition+" times\r\r";
+                        detailsTextBox.Text = detailsTextBox.Text + "KEYWORD : " + key + "\r" + "In File " + Ufile.name + "   " + repetition + " times\r\r";
 
-                        for(int q=0;q<numberofline.Count;q++)
+                        for (int q = 0; q < numberofline.Count; q++)
                         {
-                            detailsTextBox.Text = detailsTextBox.Text + numberofline[q]+"\r";
+                            detailsTextBox.Text = detailsTextBox.Text + numberofline[q] + "\r";
                         }
 
                         detailsTextBox.Text = detailsTextBox.Text + "-----------------------------------------------\r";
-
                     }
 
-                    
-
-
-
-
-
                 }
+                
+
                 reader.Close();
                 inFile.Close();
 
 
             }
-
+        
 
 
         }

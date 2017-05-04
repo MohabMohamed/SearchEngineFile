@@ -39,7 +39,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(27, 47);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -48,7 +48,7 @@
             // 
             // DiplayFileBtn
             // 
-            this.DiplayFileBtn.Location = new System.Drawing.Point(326, 16);
+            this.DiplayFileBtn.Location = new System.Drawing.Point(270, 13);
             this.DiplayFileBtn.Margin = new System.Windows.Forms.Padding(2);
             this.DiplayFileBtn.Name = "DiplayFileBtn";
             this.DiplayFileBtn.Size = new System.Drawing.Size(74, 27);
@@ -77,7 +77,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(405, 17);
+            this.button3.Location = new System.Drawing.Point(362, 13);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(74, 27);
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 378);
+            this.ClientSize = new System.Drawing.Size(481, 319);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.DiplayFileBtn);

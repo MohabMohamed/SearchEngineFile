@@ -20,4 +20,16 @@
     <Name_File>forrr</Name_File>
     <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
   </forall>
+  <Sports>
+    <Name_File>test</Name_File>
+    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
+  </Sports>
+  <fashion>
+    <Name_File>test1</Name_File>
+    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
+  </fashion>
+  <sports>
+    <Name_File>test1</Name_File>
+    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
+  </sports>
 </categories>

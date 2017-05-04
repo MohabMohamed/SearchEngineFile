@@ -62,9 +62,16 @@ namespace SearchEngineFile
 
 
             //var selectedFile = files[listBox1.SelectedIndex];
-
-            richHighlight.Text = "";
-            richHighlight.Text = File.ReadAllText(fileone.path+"\\" + fileone.name + ".txt");
+            try
+            {
+                richHighlight.Text = "";
+                richHighlight.Text = File.ReadAllText(fileone.path + "\\" + fileone.name + ".txt");
+            }
+            catch
+            {
+                MessageBox.Show("This File Doesn't exist on This Computer.");
+            }
+            
 
             /*
              * h3ml load ll file

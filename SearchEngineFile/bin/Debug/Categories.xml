@@ -7,4 +7,15 @@
     <Keyword>for</Keyword>
     <Keyword>all</Keyword>
   </Category>
+  <Category Name="fashion">
+    <Keyword>dress</Keyword>
+    <Keyword>model</Keyword>
+    <Keyword>style</Keyword>
+  </Category>
+  <Category Name="sports">
+    <Keyword>football</Keyword>
+    <Keyword>swimming</Keyword>
+    <Keyword>hiking</Keyword>
+    <Keyword>volleyball</Keyword>
+  </Category>
 </Categories>
