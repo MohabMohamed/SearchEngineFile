@@ -18,4 +18,11 @@
     <Keyword>hiking</Keyword>
     <Keyword>volleyball</Keyword>
   </Category>
+  <Category Name="Movies">
+    <Keyword>movie</Keyword>
+    <Keyword>actor</Keyword>
+    <Keyword>director</Keyword>
+    <Keyword>role</Keyword>
+    <Keyword>dialoge</Keyword>
+  </Category>
 </Categories>
