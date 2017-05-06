@@ -1,10 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Categories>
-  <Category Name="Sports">
+  <Category Name="sports">
     <Keyword>football</Keyword>
+    <Keyword>volleyball</Keyword>
+    <Keyword>basketball</Keyword>
+    <Keyword>running </Keyword>
+    <Keyword>score</Keyword>
   </Category>
-  <Category Name="forall">
-    <Keyword>for</Keyword>
-    <Keyword>all</Keyword>
+  <Category Name="fashion">
+    <Keyword>dress</Keyword>
+    <Keyword>style</Keyword>
+    <Keyword>designer</Keyword>
+    <Keyword>model</Keyword>
+  </Category>
+  <Category Name="food">
+    <Keyword>spagetti</Keyword>
+    <Keyword>pizza</Keyword>
+    <Keyword>delicious</Keyword>
+    <Keyword>pasta</Keyword>
+  </Category>
+  <Category Name="school">
+    <Keyword>books</Keyword>
+    <Keyword>schedule</Keyword>
+    <Keyword>teacher</Keyword>
+    <Keyword>grades</Keyword>
   </Category>
 </Categories>

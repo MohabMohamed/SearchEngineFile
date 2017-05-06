@@ -41,3 +41,18 @@ E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\bi
 E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.pdb
 E:\year 2\Term 2\Files Organization\Project\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Highlightform.resources
 D:\gitprojects\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Highlightform.resources
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe.config
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.exe
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.pdb
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.pdb
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csprojResolveAssemblyReference.cache
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.AddCategory.resources
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.AddFile.resources
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.DisplayCategory.resources
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.DisplayFile.resources
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Form1.resources
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Highlightform.resources
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.KeywordsDetails.resources
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Properties.Resources.resources
+C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csproj.GenerateResource.Cache

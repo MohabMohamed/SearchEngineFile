@@ -14,8 +14,11 @@ namespace SearchEngineFile
         List<UserFile> listoffiles = new List<UserFile>();
         Category theone = new Category();
         UserFile fileone = new UserFile();
-        private FileInfo[] files;
-        private DirectoryInfo directory;
+
+
+
+      
+
 
         public Highlightform()
         {
@@ -48,12 +51,12 @@ namespace SearchEngineFile
         }
 
         private void listHighlight_SelectedIndexChanged(object sender, EventArgs e)
-        { 
-            
-             
-            foreach(UserFile www in listoffiles)
+        {
+
+
+            foreach (UserFile www in listoffiles)
             {
-                if(www.name==listHighlight.Text)
+                if (www.name == listHighlight.Text)
                 {
                     fileone = www;
                 }
@@ -61,10 +64,16 @@ namespace SearchEngineFile
             }
 
 
-            //var selectedFile = files[listBox1.SelectedIndex];
+            try
+            {
+                richHighlight.Text = "";
+                richHighlight.Text = File.ReadAllText(fileone.path + "\\" + fileone.name + ".txt");
+            }
+            catch
+            {
+                MessageBox.Show("This File Doesn't exist on This Computer.");
+            }
 
-            richHighlight.Text = "";
-            richHighlight.Text = File.ReadAllText(fileone.path+"\\" + fileone.name + ".txt");
 
             /*
              * h3ml load ll file
@@ -84,7 +93,7 @@ namespace SearchEngineFile
         {
             listHighlight.Items.Clear();
             selectedCategory(comboHighlight.Text);
-           
+
             foreach (Category cate in allcategories)
             {
                 if (cate.name == comboHighlight.Text)
@@ -101,7 +110,7 @@ namespace SearchEngineFile
             int start = 0;
             int end = richHighlight.Text.LastIndexOf(key);
 
-            while (start < end)
+            while (start <= end)
             {
                 richHighlight.Find(key, start, richHighlight.TextLength, RichTextBoxFinds.MatchCase);
 

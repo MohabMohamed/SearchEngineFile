@@ -38,7 +38,7 @@
             // 
             // KeywordDetails
             // 
-            this.KeywordDetails.Location = new System.Drawing.Point(192, 273);
+            this.KeywordDetails.Location = new System.Drawing.Point(155, 262);
             this.KeywordDetails.Margin = new System.Windows.Forms.Padding(2);
             this.KeywordDetails.Name = "KeywordDetails";
             this.KeywordDetails.Size = new System.Drawing.Size(143, 37);
@@ -49,7 +49,7 @@
             // 
             // DisplayCategoryBtn
             // 
-            this.DisplayCategoryBtn.Location = new System.Drawing.Point(192, 213);
+            this.DisplayCategoryBtn.Location = new System.Drawing.Point(155, 202);
             this.DisplayCategoryBtn.Margin = new System.Windows.Forms.Padding(2);
             this.DisplayCategoryBtn.Name = "DisplayCategoryBtn";
             this.DisplayCategoryBtn.Size = new System.Drawing.Size(143, 37);
@@ -60,7 +60,7 @@
             // 
             // DisplayFileBtn
             // 
-            this.DisplayFileBtn.Location = new System.Drawing.Point(192, 153);
+            this.DisplayFileBtn.Location = new System.Drawing.Point(155, 142);
             this.DisplayFileBtn.Margin = new System.Windows.Forms.Padding(2);
             this.DisplayFileBtn.Name = "DisplayFileBtn";
             this.DisplayFileBtn.Size = new System.Drawing.Size(143, 37);
@@ -71,7 +71,7 @@
             // 
             // AddCategoryBtn
             // 
-            this.AddCategoryBtn.Location = new System.Drawing.Point(192, 94);
+            this.AddCategoryBtn.Location = new System.Drawing.Point(155, 83);
             this.AddCategoryBtn.Margin = new System.Windows.Forms.Padding(2);
             this.AddCategoryBtn.Name = "AddCategoryBtn";
             this.AddCategoryBtn.Size = new System.Drawing.Size(143, 37);
@@ -82,7 +82,7 @@
             // 
             // AddFileBtn
             // 
-            this.AddFileBtn.Location = new System.Drawing.Point(192, 35);
+            this.AddFileBtn.Location = new System.Drawing.Point(155, 24);
             this.AddFileBtn.Margin = new System.Windows.Forms.Padding(2);
             this.AddFileBtn.Name = "AddFileBtn";
             this.AddFileBtn.Size = new System.Drawing.Size(143, 37);
@@ -93,7 +93,7 @@
             // 
             // Highlight
             // 
-            this.Highlight.Location = new System.Drawing.Point(192, 333);
+            this.Highlight.Location = new System.Drawing.Point(155, 322);
             this.Highlight.Name = "Highlight";
             this.Highlight.Size = new System.Drawing.Size(143, 37);
             this.Highlight.TabIndex = 20;
@@ -105,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 397);
+            this.ClientSize = new System.Drawing.Size(445, 400);
             this.Controls.Add(this.Highlight);
             this.Controls.Add(this.KeywordDetails);
             this.Controls.Add(this.DisplayCategoryBtn);
@@ -113,7 +113,7 @@
             this.Controls.Add(this.AddCategoryBtn);
             this.Controls.Add(this.AddFileBtn);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Welcome to File Search Engine";
             this.ResumeLayout(false);
 
         }
