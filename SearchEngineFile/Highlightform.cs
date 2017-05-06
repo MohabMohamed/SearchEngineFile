@@ -16,6 +16,10 @@ namespace SearchEngineFile
         UserFile fileone = new UserFile();
 
 
+
+      
+
+
         public Highlightform()
         {
             InitializeComponent();
@@ -60,7 +64,6 @@ namespace SearchEngineFile
             }
 
 
-            //var selectedFile = files[listBox1.SelectedIndex];
             try
             {
                 richHighlight.Text = "";

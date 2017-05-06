@@ -33,7 +33,9 @@ namespace SearchEngineFile
                 writer.WriteStartElement("Category");
                 writer.WriteAttributeString("Name", CategoryNameTB.Text);
 
+
                 for (int i = 0; i < KeywordsGV.RowCount - 1; i++)
+
                 {
                     writer.WriteStartElement("Keyword");
                     writer.WriteString(KeywordsGV.Rows[i].Cells[0].Value.ToString());
