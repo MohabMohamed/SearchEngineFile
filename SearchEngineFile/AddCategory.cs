@@ -24,7 +24,6 @@ namespace SearchEngineFile
                 writer.WriteStartElement("Categories");
                 writer.WriteStartElement("Category");
                 writer.WriteAttributeString("Name", CategoryNameTB.Text);
-                //writer.WriteString(CategoryNameTB.Text);
                 for (int i = 0; i < KeywordsGV.RowCount-1; i++)
                 {
                     writer.WriteStartElement("Keyword");

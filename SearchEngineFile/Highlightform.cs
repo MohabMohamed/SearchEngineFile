@@ -14,8 +14,7 @@ namespace SearchEngineFile
         List<UserFile> listoffiles = new List<UserFile>();
         Category theone = new Category();
         UserFile fileone = new UserFile();
-        private FileInfo[] files;
-        private DirectoryInfo directory;
+      
 
         public Highlightform()
         {
@@ -61,7 +60,6 @@ namespace SearchEngineFile
             }
 
 
-            //var selectedFile = files[listBox1.SelectedIndex];
             try
             {
                 richHighlight.Text = "";
