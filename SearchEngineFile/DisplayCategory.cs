@@ -12,8 +12,8 @@ namespace SearchEngineFile
             InitializeComponent();
             fillCategory();
         }
-        
-        
+
+
 
         private void DisplayCategory_Load(object sender, EventArgs e)
         {
@@ -33,7 +33,7 @@ namespace SearchEngineFile
 
 
 
-         }
+        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

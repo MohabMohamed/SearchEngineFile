@@ -14,8 +14,7 @@ namespace SearchEngineFile
         List<UserFile> listoffiles = new List<UserFile>();
         Category theone = new Category();
         UserFile fileone = new UserFile();
-        private FileInfo[] files;
-        private DirectoryInfo directory;
+
 
         public Highlightform()
         {
@@ -48,12 +47,12 @@ namespace SearchEngineFile
         }
 
         private void listHighlight_SelectedIndexChanged(object sender, EventArgs e)
-        { 
-            
-             
-            foreach(UserFile www in listoffiles)
+        {
+
+
+            foreach (UserFile www in listoffiles)
             {
-                if(www.name==listHighlight.Text)
+                if (www.name == listHighlight.Text)
                 {
                     fileone = www;
                 }
@@ -71,7 +70,7 @@ namespace SearchEngineFile
             {
                 MessageBox.Show("This File Doesn't exist on This Computer.");
             }
-            
+
 
             /*
              * h3ml load ll file
@@ -91,7 +90,7 @@ namespace SearchEngineFile
         {
             listHighlight.Items.Clear();
             selectedCategory(comboHighlight.Text);
-           
+
             foreach (Category cate in allcategories)
             {
                 if (cate.name == comboHighlight.Text)

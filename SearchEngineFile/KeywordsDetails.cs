@@ -25,13 +25,13 @@ namespace SearchEngineFile
             doc.Load("Categories.xml");
             XmlNodeList list = doc.GetElementsByTagName("Category");
             allcategories.Clear();
-            for (int i=0;i<list.Count;i++)
+            for (int i = 0; i < list.Count; i++)
             {
                 Category one = new Category();
                 XmlNodeList children = list[i].ChildNodes;
-                XmlAttributeCollection Att= list[i].Attributes;
+                XmlAttributeCollection Att = list[i].Attributes;
                 one.name = Att[0].Value;
-                for(int y=0;y<children.Count;y++)
+                for (int y = 0; y < children.Count; y++)
                 {
                     one.keywords.Add(children[y].InnerText);
                 }
@@ -65,7 +65,7 @@ namespace SearchEngineFile
                 //exception at displaying a category that contains non existant paths
                 FileStream inFile = new FileStream(Ufile.path + "\\" + Ufile.name + ".txt", FileMode.Open);
                 StreamReader reader = new StreamReader(inFile);
-               
+
                 string record;
                 foreach (String key in theone.keywords)
                 {
@@ -107,14 +107,14 @@ namespace SearchEngineFile
                     }
 
                 }
-                
+
 
                 reader.Close();
                 inFile.Close();
 
 
             }
-        
+
 
 
         }
@@ -126,17 +126,17 @@ namespace SearchEngineFile
             XmlNode list2 = doc.SelectSingleNode("categories");
             XmlNodeList children = list2.ChildNodes;
             listoffiles.Clear();
-            for (int i=0;i<children.Count;i++)
+            for (int i = 0; i < children.Count; i++)
             {
                 UserFile one = new UserFile();
-                if(children[i].Name==Categoryname)
+                if (children[i].Name == Categoryname)
                 {
                     XmlNodeList childofchild = children[i].ChildNodes;
-                    one.name=childofchild[0].InnerText;
+                    one.name = childofchild[0].InnerText;
                     one.path = childofchild[1].InnerText;
                     listoffiles.Add(one);
                 }
-                
+
             }
 
         }

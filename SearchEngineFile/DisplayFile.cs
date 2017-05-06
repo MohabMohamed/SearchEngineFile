@@ -12,7 +12,7 @@ namespace SearchEngineFile
             InitializeComponent();
         }
 
- 
+
         private void DiplayFileBtn_Click(object sender, EventArgs e)
         {
             string t = "Path";
@@ -22,7 +22,7 @@ namespace SearchEngineFile
             dataGridView1.Rows.Clear();
             XmlDocument docement = new XmlDocument();
             docement.Load("files.xml");
-         
+
             XmlNodeList list_name = docement.GetElementsByTagName("Name_File");
             XmlNodeList list_path = docement.GetElementsByTagName("Path_File");
             for (int i = 0; i < list_name.Count; i++)
@@ -36,9 +36,9 @@ namespace SearchEngineFile
                     {
                         dataGridView1.Columns.Add("name", s);
                         dataGridView1.Columns.Add("path", t);
-                        
+
                     }
-                     dataGridView1.Rows.Add(new string[] { innerValue, path });
+                    dataGridView1.Rows.Add(new string[] { innerValue, path });
 
                 }
                 else
@@ -46,7 +46,7 @@ namespace SearchEngineFile
             }
             if (!status)
             {
-                    MessageBox.Show("the file name Does not exist try again");  
+                MessageBox.Show("the file name Does not exist try again");
             }
 
 
@@ -81,7 +81,7 @@ namespace SearchEngineFile
 
         }
 
-    
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -93,13 +93,13 @@ namespace SearchEngineFile
             docement.Load("files.xml");
             XmlNodeList list_name = docement.GetElementsByTagName("Name_File");
             XmlNodeList list_path = docement.GetElementsByTagName("Path_File");
-            for (int i = 0; i < list_name.Count ; i++)
+            for (int i = 0; i < list_name.Count; i++)
             {
                 if (dataGridView1.ColumnCount == 0)
                 {
                     dataGridView1.Columns.Add("name", s);
                     dataGridView1.Columns.Add("path", t);
-                    
+
                 }
                 dataGridView1.Rows.Add(new string[] { list_name[i].InnerText, list_path[i].InnerText });
 
@@ -137,8 +137,8 @@ namespace SearchEngineFile
 
         }
 
-     
 
-           
-        }
+
+
     }
+}

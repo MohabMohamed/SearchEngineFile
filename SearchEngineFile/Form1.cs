@@ -9,7 +9,7 @@ namespace SearchEngineFile
         {
             InitializeComponent();
         }
-        
+
         private void AddFileBtn_Click(object sender, EventArgs e)
         {
             AddFile f = new AddFile();
@@ -32,7 +32,7 @@ namespace SearchEngineFile
         {
             DisplayCategory f = new DisplayCategory();
             LoadForm(f);
-            
+
         }
 
         private void KeywordDetails_Click(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace SearchEngineFile
         {
             frm.FormClosed += new FormClosedEventHandler(Form_Closed);
             this.Hide();
-            
+
             frm.Show();
         }
 

@@ -54,7 +54,7 @@ namespace SearchEngineFile
             }
             else
             {
-             
+
                 bool a = true;
                 string name = txt_name.Text;
                 string path = txt_path.Text;
@@ -193,7 +193,7 @@ namespace SearchEngineFile
 
         }
 
-    
+
 
 
     }
