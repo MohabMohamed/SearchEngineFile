@@ -40,7 +40,7 @@ namespace SearchEngineFile
             else
             {
                
-                    XmlDocument doc = new XmlDocument();
+                XmlDocument doc = new XmlDocument();
                 doc.Load("Categories.xml");
                 if (doc.SelectSingleNode("/ Categories/ Category [@Name =\""+CategoryNameTB.Text+"\"] ") == null)
                 {

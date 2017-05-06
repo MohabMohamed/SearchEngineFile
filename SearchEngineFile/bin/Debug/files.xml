@@ -1,43 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <categories>
-  <Sports>
-    <Name_File>dina</Name_File>
-    <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </Sports>
-  <Sports>
-    <Name_File>doda</Name_File>
-    <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </Sports>
-  <Sports>
-    <Name_File>doda2</Name_File>
-    <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </Sports>
-  <Sports>
-    <Name_File>doda3</Name_File>
-    <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </Sports>
-  <forall>
-    <Name_File>forrr</Name_File>
-    <Path_File>C:\Users\DELL\Desktop\horse</Path_File>
-  </forall>
-  <Sports>
-    <Name_File>test</Name_File>
-    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
-  </Sports>
-  <fashion>
-    <Name_File>test1</Name_File>
-    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
-  </fashion>
   <sports>
-    <Name_File>test1</Name_File>
+    <Name_File>file1</Name_File>
     <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
   </sports>
   <fashion>
-    <Name_File>magazine</Name_File>
+    <Name_File>file1</Name_File>
+    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
+  </fashion>
+  <food>
+    <Name_File>file1</Name_File>
+    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
+  </food>
+  <school>
+    <Name_File>file1</Name_File>
+    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
+  </school>
+  <sports>
+    <Name_File>file2</Name_File>
+    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
+  </sports>
+  <fashion>
+    <Name_File>file3</Name_File>
     <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
   </fashion>
   <sports>
-    <Name_File>magazine</Name_File>
+    <Name_File>file4</Name_File>
     <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
   </sports>
+  <fashion>
+    <Name_File>file4</Name_File>
+    <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
+  </fashion>
 </categories>

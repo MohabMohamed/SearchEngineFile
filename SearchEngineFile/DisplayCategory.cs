@@ -58,8 +58,6 @@ namespace SearchEngineFile
                     for (int j = 0; j < listofcategories[i].ChildNodes.Count; j++)
                     {
                         currentkeywords.Add(listofcategories[i].ChildNodes[j].InnerText.ToString());
-
-
                     }
 
 
