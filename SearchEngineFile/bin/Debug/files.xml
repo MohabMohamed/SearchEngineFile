@@ -52,4 +52,20 @@
     <Name_File>file7</Name_File>
     <Path_File>C:\Users\Dell-PC\Desktop</Path_File>
   </fashion>
+  <sports>
+    <Name_File>mohab</Name_File>
+    <Path_File>C:\Users\mohab\Desktop</Path_File>
+  </sports>
+  <fashion>
+    <Name_File>mohab</Name_File>
+    <Path_File>C:\Users\mohab\Desktop</Path_File>
+  </fashion>
+  <food>
+    <Name_File>mohab</Name_File>
+    <Path_File>C:\Users\mohab\Desktop</Path_File>
+  </food>
+  <school>
+    <Name_File>assignment</Name_File>
+    <Path_File>C:\Users\mohab\Desktop</Path_File>
+  </school>
 </categories>

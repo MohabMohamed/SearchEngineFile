@@ -31,6 +31,10 @@ namespace SearchEngineFile
         {
 
             List<string> categories_all = new List<string>(); // list of checkedlist
+
+            bool a = true;
+            string name = txt_name.Text;
+            string path = txt_path.Text;
             for (int i = 0; i < categories.CheckedItems.Count; i++)
             {
                 categories_all.Add(categories.CheckedItems[i].ToString());
@@ -44,10 +48,12 @@ namespace SearchEngineFile
             {
                 MessageBox.Show("Please Select Path of File");
             }
-            else if (txt_pragrapgh.Text == "")
+            else if (!File.Exists(path + "\\" + name+".txt"))
             {
-                MessageBox.Show("Your Forget Enter in Text Paragraph");
+                MessageBox.Show("the text file doesn't exist");
             }
+
+
             else if (categories_all.Count == 0)
             {
                 MessageBox.Show("Please Select Your Categories");
@@ -55,10 +61,8 @@ namespace SearchEngineFile
             else
             {
 
-                bool a = true;
-                string name = txt_name.Text;
-                string path = txt_path.Text;
-                string paragraph = txt_pragrapgh.Text;
+               
+                
 
                 if (!File.Exists("files.xml"))
                 {
@@ -101,10 +105,7 @@ namespace SearchEngineFile
                             XmlElement root = doc.DocumentElement;
                             root.AppendChild(category);
                             doc.Save("files.xml"); // save fel file
-
-                            StreamWriter sw = new StreamWriter(path + "\\" + name + ".txt"); // dh el add text file 3la asas e5tyaro lel path el mo3yn w bytsma el file be esm el input file name ele enTa md5lo
-                            sw.Write(paragraph);
-                            sw.Close();
+                           
                         }
                     }
                 }
@@ -153,9 +154,7 @@ namespace SearchEngineFile
                         root.AppendChild(category);
                         doc.Save("files.xml");
 
-                        StreamWriter sw = new StreamWriter(path + "\\" + name + ".txt");
-                        sw.Write(paragraph);
-                        sw.Close();
+                      
                     }
                 }
 
@@ -164,7 +163,7 @@ namespace SearchEngineFile
                     MessageBox.Show("Successfully Added in File");
                     txt_name.Clear();
                     txt_path.Clear();
-                    txt_pragrapgh.Clear();
+                    
 
                     // el7mdollah el Task 5elst be salam :"D
                 }
