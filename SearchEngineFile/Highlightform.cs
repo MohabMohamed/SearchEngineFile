@@ -108,7 +108,7 @@ namespace SearchEngineFile
             int start = 0;
             int end = richHighlight.Text.LastIndexOf(key);
 
-            while (start < end)
+            while (start <= end)
             {
                 richHighlight.Find(key, start, richHighlight.TextLength, RichTextBoxFinds.MatchCase);
 
