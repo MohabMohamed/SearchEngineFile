@@ -56,3 +56,6 @@ C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\Searc
 C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.KeywordsDetails.resources
 C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.Properties.Resources.resources
 C:\Users\Dell-PC\Desktop\FINAL\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.csproj.GenerateResource.Cache
+C:\Users\aesma\Desktop\now\SearchEngineFile\SearchEngineFile\bin\Debug\SearchEngineFile.exe.config
+C:\Users\aesma\Desktop\now\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.exe
+C:\Users\aesma\Desktop\now\SearchEngineFile\SearchEngineFile\obj\Debug\SearchEngineFile.pdb
