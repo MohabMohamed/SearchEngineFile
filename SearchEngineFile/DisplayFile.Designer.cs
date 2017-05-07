@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplayFile));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.DiplayFileBtn = new System.Windows.Forms.Button();
             this.FileNameTB = new System.Windows.Forms.TextBox();
@@ -96,6 +97,7 @@
             this.Controls.Add(this.DiplayFileBtn);
             this.Controls.Add(this.FileNameTB);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DisplayFile";
             this.Text = "DisplayFile";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

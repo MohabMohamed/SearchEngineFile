@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.KeywordDetails = new System.Windows.Forms.Button();
             this.DisplayCategoryBtn = new System.Windows.Forms.Button();
             this.DisplayFileBtn = new System.Windows.Forms.Button();
@@ -112,8 +113,9 @@
             this.Controls.Add(this.DisplayFileBtn);
             this.Controls.Add(this.AddCategoryBtn);
             this.Controls.Add(this.AddFileBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Welcome to File Search Engine";
+            this.Text = "File Search Engine";
             this.ResumeLayout(false);
 
         }

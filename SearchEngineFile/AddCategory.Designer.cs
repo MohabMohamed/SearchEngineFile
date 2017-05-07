@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCategory));
             this.Addbtn = new System.Windows.Forms.Button();
             this.KeywordsGV = new System.Windows.Forms.DataGridView();
+            this.Keywords = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.CategoryNameTB = new System.Windows.Forms.TextBox();
-            this.Keywords = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.KeywordsGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,13 @@
             this.KeywordsGV.Size = new System.Drawing.Size(203, 215);
             this.KeywordsGV.TabIndex = 6;
             // 
+            // Keywords
+            // 
+            this.Keywords.FillWeight = 160F;
+            this.Keywords.HeaderText = "Keywords";
+            this.Keywords.Name = "Keywords";
+            this.Keywords.Width = 160;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -77,13 +85,6 @@
             this.CategoryNameTB.Size = new System.Drawing.Size(106, 20);
             this.CategoryNameTB.TabIndex = 4;
             // 
-            // Keywords
-            // 
-            this.Keywords.FillWeight = 160F;
-            this.Keywords.HeaderText = "Keywords";
-            this.Keywords.Name = "Keywords";
-            this.Keywords.Width = 160;
-            // 
             // AddCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -93,6 +94,7 @@
             this.Controls.Add(this.KeywordsGV);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CategoryNameTB);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddCategory";
             this.Text = "AddCategory";
             this.Load += new System.EventHandler(this.AddCategory_Load);

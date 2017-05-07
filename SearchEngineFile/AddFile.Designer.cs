@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFile));
             this.bTn_save = new System.Windows.Forms.Button();
             this.bTn_path = new System.Windows.Forms.Button();
             this.categories = new System.Windows.Forms.CheckedListBox();
@@ -109,6 +110,7 @@
             this.Controls.Add(this.txt_name);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddFile";
             this.Text = "AddFile";
             this.ResumeLayout(false);

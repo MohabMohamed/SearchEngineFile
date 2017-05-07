@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KeywordsDetails));
             this.label1 = new System.Windows.Forms.Label();
             this.category = new System.Windows.Forms.ComboBox();
             this.detailsTextBox = new System.Windows.Forms.RichTextBox();
@@ -39,7 +40,7 @@
             this.label1.Location = new System.Drawing.Point(47, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "category";
             // 
@@ -69,6 +70,7 @@
             this.Controls.Add(this.detailsTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.category);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KeywordsDetails";
             this.Text = "KeywordsDetails";
             this.ResumeLayout(false);
