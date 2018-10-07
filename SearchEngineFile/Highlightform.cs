@@ -110,15 +110,8 @@ namespace SearchEngineFile
             int start = 0;
             int end = richHighlight.Text.LastIndexOf(key);
 
-            while (start <= end)
-            {
-                richHighlight.Find(key, start, richHighlight.TextLength, RichTextBoxFinds.MatchCase);
-
-                richHighlight.SelectionBackColor = Color.Chartreuse;
-
-                start = richHighlight.Text.IndexOf(key, start) + 1;
-            }
-
+            richHighlight.Find(key, start, richHighlight.TextLength, RichTextBoxFinds.MatchCase);
+            richHighlight.SelectionBackColor = Color.Chartreuse;
 
         }
 
